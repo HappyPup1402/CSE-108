@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <link rel="stylesheet" href="static/style.css" />
+    <head>
+      <title>Grade Info</title>
+    </head>
+
+
+    <h1>Display All Students</h1>
+    <div id="demo">
+      <button type="button" onclick="displayAll()">Display Content</button>
+    </div>
+    <p id = 0></p>
+
+
+    <h2>Display Student Info:</h2>
+    <form>
+        <label for="displayStu">Full Name:</label><br>
+        <input type="text" id="displayStu" name="displayStu" /><br />
+        <button type="button" id="Grade" onclick="displayStudent()">Search</button>
+    </form>
+    <p id = 1></p>
+
+    <h3>Add Student</h3>
+    <form>
+      <label for="addStu">Full Name:</label><br>
+      <input type="text" id="addStu" name="addStu" /><br />
+      <label for="addGrade">Grade:</label><br>
+      <input type="text" id="addGrade" name="addGrade" />
+      <button type="button" id="Add" onclick="addStudent()">Add</button>
+    </form>
+    <p id = 2></p>
+
+
+    <h4>Edit Grade</h4>
+    <form>
+      <label for="editStu">Full Name:</label><br>
+      <input type="text" id="editStu" name="editStu" /><br>
+      <label for="percentage">New Grade:</label><br>
+      <input type="text" id="editGrade" name="editGrade" />
+      <button type="button" id="edit" onclick="gradeEdit()">edit</button>
+    </form>
+    <p id = 3></p>
+
+
+    <h5>Delete Student</h5>
+    <form>
+      <label for="removeStu">Full Name:</label><br>
+      <input type="text" id="removeStu" name="removeStu" />
+      <button type="button" id="Remove" onclick="removeStudent()">Remove</button>
+    </form>
+    <p id = 4></p>
+
+
+    <script src="static/script.js"></script>
+  </body>
+</html>

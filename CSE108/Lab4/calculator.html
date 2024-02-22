@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <link rel="stylesheet" href="style.css" />
+    <div>
+      <p id="Answer">0</p>
+      <button class="button all-clear" onclick="allClear()">AC</button><br />
+      <button class="button number" onclick="getValue(7)">7</button>
+      <button class="button number" onclick="getValue(8)">8</button>
+      <button class="button number" onclick="getValue(9)">9</button>
+      <button class="button operation" id ="÷" onclick="symbol('÷')">÷</button><br />
+      <button class="button number" onclick="getValue(4)">4</button>
+      <button class="button number" onclick="getValue(5)">5</button>
+      <button class="button number" onclick="getValue(6)">6</button>
+      <button class="button operation" id ="*" onclick="symbol('*')">*</button><br />
+      <button class="button number" onclick="getValue(1)">1</button>
+      <button class="button number" onclick="getValue(2)">2</button>
+      <button class="button number" onclick="getValue(3)">3</button>
+      <button class="button operation" id ="-" onclick="symbol('-')">-</button><br />
+      <button class="button number" onclick="getValue(0)">0</button>
+      <button class="button number" onclick="getValue('.')">.</button>
+      <button class="button operation" onclick="solve(0)">=</button>
+      <button class="button operation" id ="+" onclick="symbol('+')">+</button>
+    </div>
+    <script src ="script.js"></script>
+  </body>
+</html>
