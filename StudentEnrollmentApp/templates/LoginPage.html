@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="form">
+    </div>
+    {% block content %}
+        {% for message in get_flashed_messages() %}
+            {{ message }}
+        {% endfor %}
+
+        {% if username %}
+            <h2>Hello {{username}}!</h2>
+        {% else %}
+            <h1>University of California, Merced</h1>
+            <h2>Login Page</h2>
+            <br>
+            <form method="POST">
+                {{ form.hidden_tag()}}
+                {{ form.username.label }}
+                {{ form.username() }}
+                <br>
+                {{ form.password.label }}
+                {{ form.password() }}
+                <br>
+                {{ form.submit() }}
+            </form>
+        {% endif %}
+    {% endblock %}
+</div>
+    <script src="{{url_for('static', filename='/script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css')}}">
+
+</body>
+
+</html>
