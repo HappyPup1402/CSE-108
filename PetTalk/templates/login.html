@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <script src="{{ url_for('static',filename='js.js') }}"></script>
+    <link rel="stylesheet" href="./static/login.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="login-box">
+            <h2>Pet Talk</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" id = "username" required>
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" id = "password" required>
+                <label>Password</label>
+              </div>
+              <div>
+              <a id ="submit" class = "b" href="" onclick="readLogin()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Log In
+              </a>
+              <label id="message"></label>
+              <br></br>
+              <br></br>
+              <a href="/signup" style="color: white;" >Don't have an account? Sign up here.</a>
+            </div>
+            </form>
+          </div>
+          <script>
+        var button = document.getElementById("submit");
+        var textBox = document.getElementById("password");
+
+        textBox.addEventListener("keyup", function (event) {
+
+            // Checking if key pressed is ENTER or not
+            // if the key pressed is ENTER
+            // click listener on button is called
+            if (event.keyCode == 13) {
+                button.click();
+            }
+        });
+    </script>
+    </body>
+</body>
+</html>

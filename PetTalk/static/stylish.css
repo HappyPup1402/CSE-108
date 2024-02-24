@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+.login{
+        width: 400px;
+        overflow: hidden;
+        margin: auto;
+        padding: 50px;
+        background: bisque;
+        border: outset burlywood 10px;
+
+}
+ul{
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: bisque;
+    border: inset burlywood 10px;
+}
+li{
+    color: black;
+}
+h1, h2{
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: bisque;
+    border: inset burlywood 10px;
+}
+label{
+    color: #08ffd1;
+    font-size: 17px;
+}
+label{
+    color: black;
+}
+button{
+    border: ridge burlywood 10px;
+    font-size: medium;
+    background-color: bisque;
+    margin-left:25%;
+}
+#Username{
+    width: 300px;
+    height: 30px;
+    border: solid black 1px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: solid black 1px;
+    padding-left: 8px;
+}
+table, th, td {
+    margin: auto;
+    background-color: bisque;
+    background-size: 75px;
+    border: 2px solid rgb(41, 41, 41);
+    font-size: 30px;
+    text-align: center;
+}
+#Home{
+    background-image: url("blog.jpg");
+    background-position: center;
+  }
+  #Page1{
+    background-image: url("../assets/blog.jpg");
+    background-size: 1900px 1400px;
+    background-position: center;
+  }
+
+  #center {
+    width: 400px;
+    margin: auto;
+
+    /* Optional Styling */
+    padding: 20px;
+    border-style: solid;
+    border-color: #B6C7D6;
+    border-radius: 20px;
+    background-color: #EAF0F6;
+
+  }
+
+
+  /* Styling */
+
+  body {
+    margin: auto;
+    width: 640px;
+    padding: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2E475D;
+  }
+  ul li{
+    display: inline-block;
+  }
+  ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+  }
+
+  i.container {
+    width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid var(--clr-neon);
+    outline: none;
+    margin-bottom: 1rem;
+  }
+
+  button[type="submit"] {
+    width: 20%;
+
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--clr-neon);
+    color: burlywood;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover {
+    background-color: lightseagreen;
+  }
+
+  .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}

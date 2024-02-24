@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="{{ url_for('static',filename='js.js') }}"></script>
+    <link rel="stylesheet" href="./static/login.css">
+</head>
+    <h1 align="center">Posts</h1>
+<form>
+
+    <div class="login-box">
+        <div class = "user-box">
+        <input type="text" name="post" id="post">
+        <label>Type your message here</label>
+        <a class = "b">
+        <button class="button_slide slide_diagonal"type="button" name="submit" onclick="addPost();window.location.href='https://pettalk.pythonanywhere.com/home'">Submit Post</button>
+        </a>
+        </div>
+    </div>
+</html>
